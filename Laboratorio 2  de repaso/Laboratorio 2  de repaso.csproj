@@ -46,12 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alquiler.cs" />
     <Compile Include="alquilerform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="alquilerform.Designer.cs">
       <DependentUpon>alquilerform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clientes.cs" />
     <Compile Include="clientesform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +74,7 @@
     <Compile Include="Vehiculoform.Designer.cs">
       <DependentUpon>Vehiculoform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vehiculos.cs" />
     <EmbeddedResource Include="alquilerform.resx">
       <DependentUpon>alquilerform.cs</DependentUpon>
     </EmbeddedResource>
