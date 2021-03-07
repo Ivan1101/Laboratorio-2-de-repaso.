@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace Laboratorio_2__de_repaso
 {
-    public partial class alquilerform : Form
+    public partial class Menu : Form
     {
-        public alquilerform()
+        public Menu()
         {
             InitializeComponent();
         }
 
-        private void alquilerform_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Menu vmenu = new Menu();
-            vmenu.Show();
+            alquilerform valquier = new alquilerform();
+            valquier.Show();
             this.SetVisibleCore(false);
         }
     }
