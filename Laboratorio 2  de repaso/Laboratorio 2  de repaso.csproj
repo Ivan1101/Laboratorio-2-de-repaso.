@@ -54,6 +54,12 @@
       <DependentUpon>alquilerform.cs</DependentUpon>
     </Compile>
     <Compile Include="Clientes.cs" />
+    <Compile Include="Clientesform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientesform.Designer.cs">
+      <DependentUpon>Clientesform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Vehiculos.cs" />
     <EmbeddedResource Include="alquilerform.resx">
       <DependentUpon>alquilerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientesform.resx">
+      <DependentUpon>Clientesform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
