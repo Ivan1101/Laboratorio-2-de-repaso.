@@ -33,9 +33,9 @@ namespace Laboratorio_2__de_repaso
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_direccion = new System.Windows.Forms.TextBox();
+            this.textBox_nombre = new System.Windows.Forms.TextBox();
+            this.textBox_nit = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -76,26 +76,26 @@ namespace Laboratorio_2__de_repaso
             this.label1.TabIndex = 14;
             this.label1.Text = "Nit";
             // 
-            // textBox3
+            // textBox_direccion
             // 
-            this.textBox3.Location = new System.Drawing.Point(204, 127);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 20);
-            this.textBox3.TabIndex = 13;
+            this.textBox_direccion.Location = new System.Drawing.Point(204, 127);
+            this.textBox_direccion.Name = "textBox_direccion";
+            this.textBox_direccion.Size = new System.Drawing.Size(154, 20);
+            this.textBox_direccion.TabIndex = 13;
             // 
-            // textBox2
+            // textBox_nombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(204, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 20);
-            this.textBox2.TabIndex = 12;
+            this.textBox_nombre.Location = new System.Drawing.Point(204, 82);
+            this.textBox_nombre.Name = "textBox_nombre";
+            this.textBox_nombre.Size = new System.Drawing.Size(154, 20);
+            this.textBox_nombre.TabIndex = 12;
             // 
-            // textBox1
+            // textBox_nit
             // 
-            this.textBox1.Location = new System.Drawing.Point(204, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 20);
-            this.textBox1.TabIndex = 11;
+            this.textBox_nit.Location = new System.Drawing.Point(204, 39);
+            this.textBox_nit.Name = "textBox_nit";
+            this.textBox_nit.Size = new System.Drawing.Size(154, 20);
+            this.textBox_nit.TabIndex = 11;
             // 
             // button1
             // 
@@ -116,12 +116,13 @@ namespace Laboratorio_2__de_repaso
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_direccion);
+            this.Controls.Add(this.textBox_nombre);
+            this.Controls.Add(this.textBox_nit);
             this.Controls.Add(this.button1);
             this.Name = "Clientesform";
             this.Text = "Clientesform";
+            this.Load += new System.EventHandler(this.Clientesform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,9 +134,9 @@ namespace Laboratorio_2__de_repaso
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_direccion;
+        private System.Windows.Forms.TextBox textBox_nombre;
+        private System.Windows.Forms.TextBox textBox_nit;
         private System.Windows.Forms.Button button1;
     }
 }
