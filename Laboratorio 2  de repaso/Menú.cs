@@ -16,5 +16,10 @@ namespace Laboratorio_2__de_repaso
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
