@@ -121,6 +121,7 @@ namespace Laboratorio_2__de_repaso
             this.Controls.Add(this.textBox_nit);
             this.Controls.Add(this.button1);
             this.Name = "Clientesform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientesform";
             this.Load += new System.EventHandler(this.Clientesform_Load);
             this.ResumeLayout(false);

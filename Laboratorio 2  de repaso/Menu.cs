@@ -19,14 +19,24 @@ namespace Laboratorio_2__de_repaso
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Clientesform Vclientes = new Clientesform();
+            Vclientes.Show();
+            this.SetVisibleCore(false);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Vehiculoform Vvehiculo = new Vehiculoform();
+            Vvehiculo.Show();
+            this.SetVisibleCore(false);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             alquilerform valquier = new alquilerform();
             valquier.Show();
             this.SetVisibleCore(false);
+
         }
     }
 }

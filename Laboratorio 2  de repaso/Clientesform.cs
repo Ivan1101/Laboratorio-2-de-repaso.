@@ -64,31 +64,21 @@ namespace Laboratorio_2__de_repaso
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
                 //declaramos un objeto cliente de la clase clientes
-                Clientes clientetemp = new Clientes();
-                clientetemp.Nit = textBox_nit.Text;
-                clientetemp.Nombre = textBox_nombre.Text;
-                clientetemp.Dirección = textBox_direccion.Text;
-                //para asignarle los datos leidos del archivo
-                clientes.Add(clientetemp);
-                //luego guardar el tempcliente en la lista de clienters
-                guardar("Clientes.txt");
-
+                Clientes clientetempo = new Clientes();
+                clientetempo.Nit = textBox_nit.Text;
+                clientetempo.Nombre = textBox_nombre.Text;
+                clientetempo.Dirección = textBox_direccion.Text;
+                clientes.Add(clientetempo);
+                guardar("clientes.txt");
                 limpiar();
                 MessageBox.Show("Cliente agregado correctamente");
-            }
-            catch (Exception)
-            {
-                // Condición para emitir si falta en llenar un campo
-                MessageBox.Show("No se han llenado todos los datos", "Mi Mesaje Predeterminado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+        
         }
 
         private void Clientesform_Load(object sender, EventArgs e)
         {
-            leer_datos("Clientes.txt");
+            leer_datos("clientes.txt");
         }
     }
 }
