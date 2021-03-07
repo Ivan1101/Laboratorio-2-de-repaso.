@@ -60,11 +60,11 @@
     <Compile Include="clientesform.Designer.cs">
       <DependentUpon>clientesform.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menú.cs">
+    <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menú.Designer.cs">
-      <DependentUpon>Menú.cs</DependentUpon>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,8 +81,8 @@
     <EmbeddedResource Include="clientesform.resx">
       <DependentUpon>clientesform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menú.resx">
-      <DependentUpon>Menú.cs</DependentUpon>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

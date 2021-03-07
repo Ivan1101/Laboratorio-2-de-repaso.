@@ -29,9 +29,9 @@ namespace Laboratorio_2__de_repaso
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_nit = new System.Windows.Forms.TextBox();
+            this.textBox_nombre = new System.Windows.Forms.TextBox();
+            this.textBox_direccion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,26 +39,26 @@ namespace Laboratorio_2__de_repaso
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox_nit
             // 
-            this.textBox1.Location = new System.Drawing.Point(171, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox_nit.Location = new System.Drawing.Point(171, 51);
+            this.textBox_nit.Name = "textBox_nit";
+            this.textBox_nit.Size = new System.Drawing.Size(100, 20);
+            this.textBox_nit.TabIndex = 0;
             // 
-            // textBox2
+            // textBox_nombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 93);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox_nombre.Location = new System.Drawing.Point(171, 93);
+            this.textBox_nombre.Name = "textBox_nombre";
+            this.textBox_nombre.Size = new System.Drawing.Size(100, 20);
+            this.textBox_nombre.TabIndex = 1;
             // 
-            // textBox3
+            // textBox_direccion
             // 
-            this.textBox3.Location = new System.Drawing.Point(171, 134);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBox_direccion.Location = new System.Drawing.Point(171, 134);
+            this.textBox_direccion.Name = "textBox_direccion";
+            this.textBox_direccion.Size = new System.Drawing.Size(100, 20);
+            this.textBox_direccion.TabIndex = 2;
             // 
             // label1
             // 
@@ -89,12 +89,13 @@ namespace Laboratorio_2__de_repaso
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(330, 178);
+            this.button1.Location = new System.Drawing.Point(306, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 35);
             this.button1.TabIndex = 6;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -115,9 +116,9 @@ namespace Laboratorio_2__de_repaso
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_direccion);
+            this.Controls.Add(this.textBox_nombre);
+            this.Controls.Add(this.textBox_nit);
             this.Name = "clientesform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "clientesform";
@@ -129,9 +130,9 @@ namespace Laboratorio_2__de_repaso
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_nit;
+        private System.Windows.Forms.TextBox textBox_nombre;
+        private System.Windows.Forms.TextBox textBox_direccion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
