@@ -77,16 +77,16 @@ namespace Laboratorio_2__de_repaso
         private void button1_Click(object sender, EventArgs e)
         {
 
-                Vehiculos tempvehiculo = new Vehiculos();
-                tempvehiculo.Placa = textBox_placa.Text;
-                tempvehiculo.Marca = textBox_marca.Text;
-                tempvehiculo.Modelo = textBox_modelo.Text;
-                tempvehiculo.Color = comboBox1.Text;
-                tempvehiculo.Precio_kilometro = float.Parse(textBox_precio.Text);
+                Vehiculos vehiculotemp = new Vehiculos();
+            vehiculotemp.Placa = textBox_placa.Text;
+            vehiculotemp.Marca = textBox_marca.Text;
+            vehiculotemp.Modelo = textBox_modelo.Text;
+            vehiculotemp.Color = comboBox1.Text;
+            vehiculotemp.Precio_kilometro = float.Parse(textBox_precio.Text);
 
                 if (verificar_repeticion(textBox_placa.Text) != 1)
                 {
-                    vehiculos.Add(tempvehiculo);
+                    vehiculos.Add(vehiculotemp);
                     guardar("vehiculos.txt");
                     limpiar();
                     MessageBox.Show("Vehiculo agregado correctamente");
