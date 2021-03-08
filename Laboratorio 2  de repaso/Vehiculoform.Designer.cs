@@ -158,7 +158,7 @@ namespace Laboratorio_2__de_repaso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 257);
+            this.ClientSize = new System.Drawing.Size(566, 257);
             this.Controls.Add(this.textBox_precio);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
