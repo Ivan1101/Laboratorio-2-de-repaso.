@@ -71,13 +71,16 @@ namespace Laboratorio_2__de_repaso
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
+            Menu vmenu = new Menu();
+            vmenu.Show();
+            this.SetVisibleCore(false);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-                Vehiculos vehiculotemp = new Vehiculos();
+            Vehiculos vehiculotemp = new Vehiculos();
             vehiculotemp.Placa = textBox_placa.Text;
             vehiculotemp.Marca = textBox_marca.Text;
             vehiculotemp.Modelo = textBox_modelo.Text;

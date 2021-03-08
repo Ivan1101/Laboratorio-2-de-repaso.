@@ -8,14 +8,11 @@ namespace Laboratorio_2__de_repaso
 {
     class Alquiler
     {
-        string nit;
-        string placa;
-        DateTime fechaalquiler;
-        DateTime fechadevolución;
+        string nombre;
+        DateTime fechad;
+        float total;
 
-        public string Nit { get => nit; set => nit = value; }
-        public string Placa { get => placa; set => placa = value; }
-        public DateTime Fechaalquiler { get => fechaalquiler; set => fechaalquiler = value; }
-        public DateTime Fechadevolución { get => fechadevolución; set => fechadevolución = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public DateTime Fechad { get => fechad; set => fechad = value; }
+        public float Total { get => total; set => total = value; }
     }
-}
