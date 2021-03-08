@@ -118,12 +118,13 @@ namespace Laboratorio_2__de_repaso
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(284, 197);
+            this.button1.Location = new System.Drawing.Point(290, 196);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 35);
             this.button1.TabIndex = 8;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -151,6 +152,7 @@ namespace Laboratorio_2__de_repaso
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Vehiculoform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "vehiculoform";
             this.ResumeLayout(false);
             this.PerformLayout();

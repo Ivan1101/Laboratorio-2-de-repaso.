@@ -10,10 +10,15 @@ namespace Laboratorio_2__de_repaso
     {
         string placa;
         string marca;
+        string modelo;
         string color;
+        float precio_kilometro;
+
 
         public string Placa { get => placa; set => placa = value; }
         public string Marca { get => marca; set => marca = value; }
         public string Color { get => color; set => color = value; }
+        public string Modelo { get => modelo; set => modelo = value; }
+        public float Precio_kilometro { get => precio_kilometro; set => precio_kilometro = value; }
     }
 }
