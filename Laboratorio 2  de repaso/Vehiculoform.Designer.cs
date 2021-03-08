@@ -33,12 +33,14 @@ namespace Laboratorio_2__de_repaso
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_placa = new System.Windows.Forms.TextBox();
+            this.textBox_marca = new System.Windows.Forms.TextBox();
+            this.textBox_modelo = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox_precio = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,26 +79,26 @@ namespace Laboratorio_2__de_repaso
             this.label4.TabIndex = 3;
             this.label4.Text = "Color";
             // 
-            // textBox1
+            // textBox_placa
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 4;
+            this.textBox_placa.Location = new System.Drawing.Point(112, 40);
+            this.textBox_placa.Name = "textBox_placa";
+            this.textBox_placa.Size = new System.Drawing.Size(121, 20);
+            this.textBox_placa.TabIndex = 4;
             // 
-            // textBox2
+            // textBox_marca
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 5;
+            this.textBox_marca.Location = new System.Drawing.Point(112, 77);
+            this.textBox_marca.Name = "textBox_marca";
+            this.textBox_marca.Size = new System.Drawing.Size(121, 20);
+            this.textBox_marca.TabIndex = 5;
             // 
-            // textBox3
+            // textBox_modelo
             // 
-            this.textBox3.Location = new System.Drawing.Point(112, 110);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 6;
+            this.textBox_modelo.Location = new System.Drawing.Point(112, 110);
+            this.textBox_modelo.Name = "textBox_modelo";
+            this.textBox_modelo.Size = new System.Drawing.Size(121, 20);
+            this.textBox_modelo.TabIndex = 6;
             // 
             // comboBox1
             // 
@@ -136,17 +138,35 @@ namespace Laboratorio_2__de_repaso
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(261, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Precio por kilometro";
+            // 
+            // textBox_precio
+            // 
+            this.textBox_precio.Location = new System.Drawing.Point(368, 46);
+            this.textBox_precio.Name = "textBox_precio";
+            this.textBox_precio.Size = new System.Drawing.Size(100, 20);
+            this.textBox_precio.TabIndex = 11;
+            // 
             // Vehiculoform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(675, 257);
+            this.Controls.Add(this.textBox_precio);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_modelo);
+            this.Controls.Add(this.textBox_marca);
+            this.Controls.Add(this.textBox_placa);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -154,6 +174,7 @@ namespace Laboratorio_2__de_repaso
             this.Name = "Vehiculoform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "vehiculoform";
+            this.Load += new System.EventHandler(this.Vehiculoform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,11 +186,13 @@ namespace Laboratorio_2__de_repaso
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_placa;
+        private System.Windows.Forms.TextBox textBox_marca;
+        private System.Windows.Forms.TextBox textBox_modelo;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox_precio;
     }
 }
