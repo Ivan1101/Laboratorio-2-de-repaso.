@@ -116,7 +116,7 @@ namespace Laboratorio_2__de_repaso
 
         }
 
-        void encontrarmayor()
+        void buscarmayor()
         {
 
 
@@ -140,7 +140,7 @@ namespace Laboratorio_2__de_repaso
 
             leer_datos();
             mostrar();
-            encontrarmayor();
+            buscarmayor();
             label10.Text = "Q " + comboBox_recorridos.Text;
             comboBox_dpi.Refresh();
             comboBox_placa.Refresh();
@@ -148,46 +148,46 @@ namespace Laboratorio_2__de_repaso
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Menu vmenu = new Menu();
-            vmenu.Show();
+            Menu v1 = new Menu();
+            v1.Show();
             this.SetVisibleCore(false);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Alquiler tempalquilados = new Alquiler();
-            tempalquilados.Nombre = comboBox_dpi.SelectedValue.ToString();
+            Alquiler alquiladotemp = new Alquiler();
+            alquiladotemp.Nombre = comboBox_dpi.SelectedValue.ToString();
             comboBox_placa.ValueMember = "Placa";
             comboBox_placa.DataSource = vehiculos;
-            tempalquilados.Placa = comboBox_placa.SelectedValue.ToString();
+            alquiladotemp.Placa = comboBox_placa.SelectedValue.ToString();
 
             comboBox_placa.ValueMember = "Marca";
             comboBox_placa.DataSource = vehiculos;
-            tempalquilados.Marca = comboBox_placa.SelectedValue.ToString();
+            alquiladotemp.Marca = comboBox_placa.SelectedValue.ToString();
 
 
             comboBox_placa.ValueMember = "Modelo";
             comboBox_placa.DataSource = vehiculos;
-            tempalquilados.Modelo = comboBox_placa.SelectedValue.ToString();
+            alquiladotemp.Modelo = comboBox_placa.SelectedValue.ToString();
 
             comboBox_placa.ValueMember = "Color";
             comboBox_placa.DataSource = vehiculos;
-            tempalquilados.Color = comboBox_placa.SelectedValue.ToString();
+            alquiladotemp.Color = comboBox_placa.SelectedValue.ToString();
 
             comboBox_placa.ValueMember = "Precio_kilometro";
             comboBox_placa.DataSource = vehiculos;
-            tempalquilados.Precio_kilometro = Convert.ToInt32(comboBox_placa.SelectedValue);
+            alquiladotemp.Precio_kilometro = Convert.ToInt32(comboBox_placa.SelectedValue);
 
-            tempalquilados.Fechad = Convert.ToDateTime(dateTimePicker2.Text);
+            alquiladotemp.Fechad = Convert.ToDateTime(dateTimePicker2.Text);
 
             comboBox_placa.ValueMember = "Precio_kilometro";
             comboBox_placa.DataSource = vehiculos;
             int kilometro = Convert.ToInt32(comboBox_placa.SelectedValue);
             int kmrecorrido = Convert.ToInt32(textBox1.Text);
-            tempalquilados.Total = (kilometro * kmrecorrido);
+            alquiladotemp.Total = (kilometro * kmrecorrido);
 
 
-            alquilados.Add(tempalquilados);
+            alquilados.Add(alquiladotemp);
             guardar();
             limpiar();
             mostrar();

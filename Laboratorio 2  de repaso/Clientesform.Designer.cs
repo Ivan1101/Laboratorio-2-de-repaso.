@@ -52,7 +52,7 @@ namespace Laboratorio_2__de_repaso
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(120, 130);
+            this.label3.Location = new System.Drawing.Point(135, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 16;
@@ -61,7 +61,7 @@ namespace Laboratorio_2__de_repaso
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(128, 85);
+            this.label2.Location = new System.Drawing.Point(143, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 15;

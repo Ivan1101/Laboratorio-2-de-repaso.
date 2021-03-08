@@ -36,7 +36,7 @@ namespace Laboratorio_2__de_repaso
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(190, 82);
+            this.button1.Location = new System.Drawing.Point(127, 82);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 57);
             this.button1.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace Laboratorio_2__de_repaso
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(340, 82);
+            this.button2.Location = new System.Drawing.Point(285, 82);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 57);
             this.button2.TabIndex = 1;
@@ -56,7 +56,7 @@ namespace Laboratorio_2__de_repaso
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(269, 156);
+            this.button3.Location = new System.Drawing.Point(213, 155);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(116, 49);
             this.button3.TabIndex = 2;
@@ -68,7 +68,7 @@ namespace Laboratorio_2__de_repaso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 296);
+            this.ClientSize = new System.Drawing.Size(544, 296);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
