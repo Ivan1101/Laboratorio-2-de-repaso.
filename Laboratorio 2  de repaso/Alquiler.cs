@@ -16,3 +16,4 @@ namespace Laboratorio_2__de_repaso
         public DateTime Fechad { get => fechad; set => fechad = value; }
         public float Total { get => total; set => total = value; }
     }
+}
