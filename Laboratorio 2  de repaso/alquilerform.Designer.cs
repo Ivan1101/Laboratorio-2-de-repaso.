@@ -35,25 +35,25 @@ namespace Laboratorio_2__de_repaso
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox_dpi = new System.Windows.Forms.ComboBox();
+            this.comboBox_placa = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.dataGridView_clientes = new System.Windows.Forms.DataGridView();
+            this.dataGridView_vehiculos = new System.Windows.Forms.DataGridView();
+            this.dataGridView_alquilados = new System.Windows.Forms.DataGridView();
+            this.comboBox_recorridos = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_clientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_vehiculos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_alquilados)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -106,21 +106,21 @@ namespace Laboratorio_2__de_repaso
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 5;
             // 
-            // comboBox1
+            // comboBox_dpi
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 40);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 21);
-            this.comboBox1.TabIndex = 6;
+            this.comboBox_dpi.FormattingEnabled = true;
+            this.comboBox_dpi.Location = new System.Drawing.Point(147, 40);
+            this.comboBox_dpi.Name = "comboBox_dpi";
+            this.comboBox_dpi.Size = new System.Drawing.Size(190, 21);
+            this.comboBox_dpi.TabIndex = 6;
             // 
-            // comboBox2
+            // comboBox_placa
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(147, 80);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(190, 21);
-            this.comboBox2.TabIndex = 7;
+            this.comboBox_placa.FormattingEnabled = true;
+            this.comboBox_placa.Location = new System.Drawing.Point(147, 80);
+            this.comboBox_placa.Name = "comboBox_placa";
+            this.comboBox_placa.Size = new System.Drawing.Size(190, 21);
+            this.comboBox_placa.TabIndex = 7;
             // 
             // textBox1
             // 
@@ -158,38 +158,38 @@ namespace Laboratorio_2__de_repaso
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // dataGridView_clientes
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(355, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(258, 150);
-            this.dataGridView1.TabIndex = 12;
+            this.dataGridView_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_clientes.Location = new System.Drawing.Point(355, 40);
+            this.dataGridView_clientes.Name = "dataGridView_clientes";
+            this.dataGridView_clientes.Size = new System.Drawing.Size(258, 150);
+            this.dataGridView_clientes.TabIndex = 12;
             // 
-            // dataGridView2
+            // dataGridView_vehiculos
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(619, 40);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(260, 150);
-            this.dataGridView2.TabIndex = 13;
+            this.dataGridView_vehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_vehiculos.Location = new System.Drawing.Point(619, 40);
+            this.dataGridView_vehiculos.Name = "dataGridView_vehiculos";
+            this.dataGridView_vehiculos.Size = new System.Drawing.Size(260, 150);
+            this.dataGridView_vehiculos.TabIndex = 13;
             // 
-            // dataGridView3
+            // dataGridView_alquilados
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(355, 218);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(311, 150);
-            this.dataGridView3.TabIndex = 14;
+            this.dataGridView_alquilados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_alquilados.Location = new System.Drawing.Point(355, 218);
+            this.dataGridView_alquilados.Name = "dataGridView_alquilados";
+            this.dataGridView_alquilados.Size = new System.Drawing.Size(311, 150);
+            this.dataGridView_alquilados.TabIndex = 14;
             // 
-            // comboBox3
+            // comboBox_recorridos
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(137, 232);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 21);
-            this.comboBox3.TabIndex = 15;
-            this.comboBox3.Visible = false;
+            this.comboBox_recorridos.FormattingEnabled = true;
+            this.comboBox_recorridos.Location = new System.Drawing.Point(137, 232);
+            this.comboBox_recorridos.Name = "comboBox_recorridos";
+            this.comboBox_recorridos.Size = new System.Drawing.Size(200, 21);
+            this.comboBox_recorridos.TabIndex = 15;
+            this.comboBox_recorridos.Visible = false;
             // 
             // button3
             // 
@@ -259,16 +259,16 @@ namespace Laboratorio_2__de_repaso
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.comboBox_recorridos);
+            this.Controls.Add(this.dataGridView_alquilados);
+            this.Controls.Add(this.dataGridView_vehiculos);
+            this.Controls.Add(this.dataGridView_clientes);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBox_placa);
+            this.Controls.Add(this.comboBox_dpi);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label4);
@@ -279,9 +279,9 @@ namespace Laboratorio_2__de_repaso
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "alquilerform";
             this.Load += new System.EventHandler(this.alquilerform_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_clientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_vehiculos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_alquilados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,16 +295,16 @@ namespace Laboratorio_2__de_repaso
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox_dpi;
+        private System.Windows.Forms.ComboBox comboBox_placa;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.DataGridView dataGridView_clientes;
+        private System.Windows.Forms.DataGridView dataGridView_vehiculos;
+        private System.Windows.Forms.DataGridView dataGridView_alquilados;
+        private System.Windows.Forms.ComboBox comboBox_recorridos;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

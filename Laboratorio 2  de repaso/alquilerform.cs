@@ -19,15 +19,19 @@ namespace Laboratorio_2__de_repaso
         string archivo2 = "vehiculos.txt";
         List<Alquiler> alquilados = new List<Alquiler>();
         string archivo4 = "alquilados.txt";
-        public alquilerform()
+        public void bloqueo_principal()
         {
-            InitializeComponent();
-            comboBox1.Enabled = false;
-            comboBox2.Enabled = false;
+            comboBox_dpi.Enabled = false;
+            comboBox_placa.Enabled = false;
             dateTimePicker1.Enabled = false;
             dateTimePicker2.Enabled = false;
             textBox1.Enabled = false;
             button3.Visible = true;
+        }
+        public alquilerform()
+        {
+            InitializeComponent();
+            bloqueo_principal();
         }
         void leer_datos()
         {
@@ -98,17 +102,17 @@ namespace Laboratorio_2__de_repaso
         void mostrar()
         {
 
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = clientes;
-            dataGridView1.Refresh();
+            dataGridView_clientes.DataSource = null;
+            dataGridView_clientes.DataSource = clientes;
+            dataGridView_clientes.Refresh();
 
-            dataGridView2.DataSource = null;
-            dataGridView2.DataSource = vehiculos;
-            dataGridView2.Refresh();
+            dataGridView_vehiculos.DataSource = null;
+            dataGridView_vehiculos.DataSource = vehiculos;
+            dataGridView_vehiculos.Refresh();
 
-            dataGridView3.DataSource = null;
-            dataGridView3.DataSource = alquilados;
-            dataGridView3.Refresh();
+            dataGridView_alquilados.DataSource = null;
+            dataGridView_alquilados.DataSource = alquilados;
+            dataGridView_alquilados.Refresh();
 
         }
 
@@ -117,19 +121,19 @@ namespace Laboratorio_2__de_repaso
 
 
             (alquilados = alquilados.OrderByDescending(p => p.Total).ToList()).ToString();
-            comboBox3.ValueMember = "Total";
-            comboBox3.DataSource = null;
-            comboBox3.DataSource = alquilados;
-            comboBox3.Refresh();
+            comboBox_recorridos.ValueMember = "Total";
+            comboBox_recorridos.DataSource = null;
+            comboBox_recorridos.DataSource = alquilados;
+            comboBox_recorridos.Refresh();
 
         }
         void limpiar()
         {
-            comboBox1.Text = null;
-            comboBox2.Text = null;
-            textBox1.Text = null;
-            comboBox1.Refresh();
-            comboBox2.Refresh();
+            comboBox_dpi.Text = "";
+            comboBox_placa.Text = "";
+            textBox1.Text = "";
+            comboBox_dpi.Refresh();
+            comboBox_placa.Refresh();
         }
         private void alquilerform_Load(object sender, EventArgs e)
         {
@@ -137,9 +141,9 @@ namespace Laboratorio_2__de_repaso
             leer_datos();
             mostrar();
             encontrarmayor();
-            label10.Text = "Q " + comboBox3.Text;
-            comboBox1.Refresh();
-            comboBox2.Refresh();
+            label10.Text = "Q " + comboBox_recorridos.Text;
+            comboBox_dpi.Refresh();
+            comboBox_placa.Refresh();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -152,33 +156,33 @@ namespace Laboratorio_2__de_repaso
         private void button1_Click(object sender, EventArgs e)
         {
             Alquiler tempalquilados = new Alquiler();
-            tempalquilados.Nombre = comboBox1.SelectedValue.ToString();
-            comboBox2.ValueMember = "Placa";
-            comboBox2.DataSource = vehiculos;
-            tempalquilados.Placa = comboBox2.SelectedValue.ToString();
+            tempalquilados.Nombre = comboBox_dpi.SelectedValue.ToString();
+            comboBox_placa.ValueMember = "Placa";
+            comboBox_placa.DataSource = vehiculos;
+            tempalquilados.Placa = comboBox_placa.SelectedValue.ToString();
 
-            comboBox2.ValueMember = "Marca";
-            comboBox2.DataSource = vehiculos;
-            tempalquilados.Marca = comboBox2.SelectedValue.ToString();
+            comboBox_placa.ValueMember = "Marca";
+            comboBox_placa.DataSource = vehiculos;
+            tempalquilados.Marca = comboBox_placa.SelectedValue.ToString();
 
 
-            comboBox2.ValueMember = "Modelo";
-            comboBox2.DataSource = vehiculos;
-            tempalquilados.Modelo = comboBox2.SelectedValue.ToString();
+            comboBox_placa.ValueMember = "Modelo";
+            comboBox_placa.DataSource = vehiculos;
+            tempalquilados.Modelo = comboBox_placa.SelectedValue.ToString();
 
-            comboBox2.ValueMember = "Color";
-            comboBox2.DataSource = vehiculos;
-            tempalquilados.Color = comboBox2.SelectedValue.ToString();
+            comboBox_placa.ValueMember = "Color";
+            comboBox_placa.DataSource = vehiculos;
+            tempalquilados.Color = comboBox_placa.SelectedValue.ToString();
 
-            comboBox2.ValueMember = "Precio_kilometro";
-            comboBox2.DataSource = vehiculos;
-            tempalquilados.Precio_kilometro = Convert.ToInt32(comboBox2.SelectedValue);
+            comboBox_placa.ValueMember = "Precio_kilometro";
+            comboBox_placa.DataSource = vehiculos;
+            tempalquilados.Precio_kilometro = Convert.ToInt32(comboBox_placa.SelectedValue);
 
             tempalquilados.Fechad = Convert.ToDateTime(dateTimePicker2.Text);
 
-            comboBox2.ValueMember = "Precio_kilometro";
-            comboBox2.DataSource = vehiculos;
-            int kilometro = Convert.ToInt32(comboBox2.SelectedValue);
+            comboBox_placa.ValueMember = "Precio_kilometro";
+            comboBox_placa.DataSource = vehiculos;
+            int kilometro = Convert.ToInt32(comboBox_placa.SelectedValue);
             int kmrecorrido = Convert.ToInt32(textBox1.Text);
             tempalquilados.Total = (kilometro * kmrecorrido);
 
@@ -192,22 +196,22 @@ namespace Laboratorio_2__de_repaso
 
         private void button3_Click(object sender, EventArgs e)
         {
-            comboBox1.Enabled = true;
-            comboBox2.Enabled = true;
+            comboBox_dpi.Enabled = true;
+            comboBox_placa.Enabled = true;
             dateTimePicker1.Enabled = true;
             dateTimePicker2.Enabled = true;
             textBox1.Enabled = true;
 
-            comboBox1.DisplayMember = "Nit";
-            comboBox1.ValueMember = "Nombre";
-            comboBox1.DataSource = null;
-            comboBox1.DataSource = clientes;
-            comboBox1.Refresh();
+            comboBox_dpi.DisplayMember = "Nit";
+            comboBox_dpi.ValueMember = "Nombre";
+            comboBox_dpi.DataSource = null;
+            comboBox_dpi.DataSource = clientes;
+            comboBox_dpi.Refresh();
 
-            comboBox2.DisplayMember = "Placa";
-            comboBox2.DataSource = null;
-            comboBox2.DataSource = vehiculos;
-            comboBox2.Refresh();
+            comboBox_placa.DisplayMember = "Placa";
+            comboBox_placa.DataSource = null;
+            comboBox_placa.DataSource = vehiculos;
+            comboBox_placa.Refresh();
             button3.Visible = false;
         }
     }
