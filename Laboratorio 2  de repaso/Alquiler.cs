@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_2__de_repaso
 {
-    class Alquiler
+    class Alquiler: Vehiculos
     {
         string nombre;
         DateTime fechad;
