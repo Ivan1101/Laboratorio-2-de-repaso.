@@ -22,6 +22,12 @@ namespace Laboratorio_2__de_repaso
         public alquilerform()
         {
             InitializeComponent();
+            comboBox1.Enabled = false;
+            comboBox2.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            dateTimePicker2.Enabled = false;
+            textBox1.Enabled = false;
+            button3.Visible = true;
         }
         void leer_datos()
         {
@@ -108,7 +114,6 @@ namespace Laboratorio_2__de_repaso
 
         void encontrarmayor()
         {
-            Alquiler tempalquilados = new Alquiler();
 
 
             (alquilados = alquilados.OrderByDescending(p => p.Total).ToList()).ToString();
@@ -128,46 +133,13 @@ namespace Laboratorio_2__de_repaso
         }
         private void alquilerform_Load(object sender, EventArgs e)
         {
-            Alquiler alquiladotemp = new Alquiler();
-            alquiladotemp.Nombre = comboBox1.SelectedValue.ToString();
-            comboBox2.ValueMember = "Placa";
-            comboBox2.DataSource = vehiculos;
-            alquiladotemp.Placa = comboBox2.SelectedValue.ToString();
 
-            comboBox2.ValueMember = "Marca";
-            comboBox2.DataSource = vehiculos;
-            alquiladotemp.Marca = comboBox2.SelectedValue.ToString();
-
-
-            comboBox2.ValueMember = "Modelo";
-            comboBox2.DataSource = vehiculos;
-            alquiladotemp.Modelo = comboBox2.SelectedValue.ToString();
-
-            comboBox2.ValueMember = "Color";
-            comboBox2.DataSource = vehiculos;
-            alquiladotemp.Color = comboBox2.SelectedValue.ToString();
-
-            comboBox2.ValueMember = "Precio_kilometro";
-            comboBox2.DataSource = vehiculos;
-            alquiladotemp.Precio_kilometro = Convert.ToInt32(comboBox2.SelectedValue);
-
-            alquiladotemp.Fechad = Convert.ToDateTime(dateTimePicker2.Text);
-
-            comboBox2.ValueMember = "Precio_kilometro";
-            comboBox2.DataSource = vehiculos;
-            int kilometro = Convert.ToInt32(comboBox2.SelectedValue);
-            int kmrecorrido = Convert.ToInt32(textBox1.Text);
-            alquiladotemp.Total = (kilometro * kmrecorrido);
-
-
-
-
-            alquilados.Add(alquiladotemp);
-            guardar();
-
-            limpiar();
+            leer_datos();
             mostrar();
-            MessageBox.Show("Vehiculo agregado correctamente");
+            encontrarmayor();
+            label10.Text = "Q " + comboBox3.Text;
+            comboBox1.Refresh();
+            comboBox2.Refresh();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -211,14 +183,11 @@ namespace Laboratorio_2__de_repaso
             tempalquilados.Total = (kilometro * kmrecorrido);
 
 
-
-
             alquilados.Add(tempalquilados);
             guardar();
-
             limpiar();
             mostrar();
-            MessageBox.Show("Vehiculo agregado correctamente");
+            MessageBox.Show("Vehiculo alquilado correctamente");
         }
 
         private void button3_Click(object sender, EventArgs e)
